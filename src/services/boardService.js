@@ -1,7 +1,7 @@
 /* eslint-disable no-useless-catch */
-import { slugify } from "~/utils/formatters"
+import { slugify } from '~/utils/formatters'
 
-const createNew = async (reqBody) => {
+const createNew = async reqBody => {
   try {
     const newBoard = {
       ...reqBody,
