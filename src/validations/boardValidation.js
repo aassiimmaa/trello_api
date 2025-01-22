@@ -25,4 +25,4 @@ const createNew = async (req, res, next) => {
   }
 }
 
-export const cardValidation = { createNew }
+export const boardValidation = { createNew }
