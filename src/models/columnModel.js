@@ -50,7 +50,7 @@ const findOneById = async id => {
   try {
     const result = await GET_DB()
       .collection(COLUMN_COLLECTION_NAME)
-      .findOne({ _id: id })
+      .findOne({ _id: new ObjectId(id) })
     return result
   } catch (error) {
     throw new Error(error)
